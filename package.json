@@ -1,0 +1,30 @@
+{
+  "name": "braavos",
+  "version": "1.0.0",
+  "description": "in-depth, user-friendly insights and visualizations from public company filings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd client && npm start\" \"cd backend && npm start\"",
+    "install-all": "cd client && npm install && cd ../server && npm install"
+  },
+  "proxy": "http://localhost:3001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahene-10xer/Braavos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahene-10xer/Braavos/issues"
+  },
+  "homepage": "https://github.com/shahene-10xer/Braavos#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "openai": "^4.24.1"
+  }
+}
